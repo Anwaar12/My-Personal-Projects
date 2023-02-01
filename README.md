@@ -2,10 +2,6 @@
 
 "Survey Form"
 
-## Live Demo
-
-https://anwaar12.github.io/My-Personal-Projects/
-
 > Description the project.
 
 > In this project I bulid Survey form using HTML and CSS.In this form your are required to enter your name,email and age you can not leave these empty otherwise form will not be submitted.In this form you can also tell us about your satisfiction what would you like us to improve by click on checkboxes or radio button and can make some comments.I use linter files for HTML and CSS to debug my code esaily and write some clean code.Please look into my project and please let me know about your feedback.If you find any issue please post it on issue page.
