@@ -13,10 +13,11 @@
       <p id="description">
         Thank you for taking the time to help us improve the platform
       </p>
-      <div>
+      <div class='main'>
       <form id="survey-form">
         <fieldset>
-          <label for="name">
+          <label for="name"
+          id="name-label">
             Name
             <br />
             <input
@@ -25,10 +26,11 @@
               id="name"
               placeholder=" Enter your name"
               class="personal-form"
+              required
             />
           </label>
           <br />
-          <label for="email">
+          <label for="email" id="email-label">
             Email
             <br />
             <input
@@ -37,20 +39,22 @@
               name="email"
               placeholder=" Enter your Email"
                 class="personal-form"
+                required
             />
           </label>
           <br />
-          <label for="age">
-            Age
+          <label for="age" id="number-label">
+            Age (optional)
             <br />
             <input
               type="number"
-              id="age"
+              id="number"
               name="age"
               placeholder=" Age"
               min="18"
               max="90"
               class="personal-form"
+              required
             />
           </label>
         </fieldset>
@@ -67,15 +71,15 @@
         </fieldset>
         <fieldset>
           <p>Would you recommend freeCodeCamp to a friend?</p>
-          <input type="radio" id="one" name="one" /><label for="one"
+          <input type="radio" id="one" name="one" value=="recommend"/><label for="one"
             >Definitely</label
           >
           <br />
-          <input type="radio" id="two" name="one" /><label for="two"
+          <input type="radio" id="two" name="one" value=="recommend"/><label for="two"
             >Maybe</label
           >
           <br />
-          <input type="radio" id="three" name="one" /><label for="three"
+          <input type="radio" id="three" name="one" value=="recommend"/><label for="three"
             >Not sure</label
           >
         </fieldset>
@@ -91,41 +95,41 @@
         </fieldset>
         <fieldset>
           <p>What would you like to see improved? (Check all that apply)</p>
-          <input type="checkbox" id="front" /><label for="front"
+          <input type="checkbox" id="front" value="opinion" /><label for="front"
             >Front-end Projects</label
           >
           <br>
-          <input type="checkbox" id="back" /><label for="back"
+          <input type="checkbox" id="back" value="opinion" /><label for="back"
             >Back-end Projects</label
           >
           <br>
-          <input type="checkbox" id="data" /><label for="data"
+          <input type="checkbox" id="data" value="opinion" /><label for="data"
             >Data Visualization</label
           >
           <br>
-          <input type="checkbox" id="Challenges" /><label for="Challenges"
+          <input type="checkbox" id="Challenges"  value="opinion"/><label for="Challenges"
             >Challenges</label
           ><br>
-          <input type="checkbox" id="open" /><label for="open"
+          <input type="checkbox" id="open" value="opinion" /><label for="open"
             >Open Source Community</label
           ><br>
-          <input type="checkbox" id="git" /><label for="git"
+          <input type="checkbox" id="git" value="opinion"/><label for="git"
             >Gitter help rooms</label
           ><br>
-          <input type="checkbox" id="videos" /><label for="videos"
+          <input type="checkbox" id="videos" value="opinion" /><label for="videos"
             >Videos</label
           ><br>
-          <input type="checkbox" id="city" /><label for="city"
+          <input type="checkbox" id="city" value="opinion"/><label for="city"
             >City Meetups</label
           ><br>
-          <input type="checkbox" id="wiki" /><label for="wiki">Wiki</label><br>
-          <input type="checkbox" id="forum" /><label for="forum">Forum</label><br>
-          <input type="checkbox" id="add" /><label for="add"
+          <input type="checkbox" id="wiki" value="opinion"/><label for="wiki">Wiki</label><br>
+          <input type="checkbox" id="forum" value="opinion"/><label for="forum">Forum</label><br>
+          <input type="checkbox" id="add" value="opinion"/><label for="add"
             >Additional Courses</label
           ><br>
         </fieldset>
         <p>Any comments or suggestions?</p>
-        <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+        <textarea name="comments" id="comments" cols="50" rows="10" placeholder="Enter your comment here....."></textarea>
         <br>
         <input type="submit" id="submit"><label for="submit"Submit</label>
       </form>
