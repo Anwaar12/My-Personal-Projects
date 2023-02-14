@@ -4,117 +4,181 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Landing Page</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header id="header">
-      <img
-        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-        alt="orignal logo"
-        id="header-img"
-      />
-      <nav id="nav-bar">
-        <a href="#Features" class="nav-link">Features</a>
-        <a href="#How_It_Works" class="nav-link">How It Works</a>
-        <a href="#Pricing" class="nav-link">Pricing</a>
+    <header>
+      <nav id="navbar">
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
+
     <main>
-      <h2>Handcrafted, home-made masterpieces</h2>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter your email address"
-          id="email"
-          required
-        />
-        <input type="submit" value="GET STARTED" id="submit" />
-      </form>
-      <section id="Features">
-        <article>
-          <i class="fa fa-3x fa-fire"></i>
-          <div class="div1">
-            <h3>Premium Materials</h3>
-            <p>
-              Our trombones use the shiniest brass which is sourced locally.
-              This will increase the longevity of your purchase.
-            </p>
-          </div>
-        </article>
-        <article>
-          <i class="fa fa-3x fa-truck"></i>
-          <div>
-            <h3>Fast Shipping</h3>
-            <p>
-              We make sure you recieve your trombone as soon as we have finished
-              making it. We also provide free returns if you are not satisfied.
-            </p>
-          </div>
-        </article>
-        <article>
-          <i class="fa fa-3x fa-battery-full"></i>
-          <div class="div3">
-            <h3>Quality Assurance</h3>
-            <p>
-              For every purchase you make, we will ensure there are no damages
-              or faults and we will check and test the pitch of your instrument.
-            </p>
-          </div>
-        </article>
+      <section id="welcome-section">
+        <h1>Hey I am Anwaar</h1>
+        <p>a web developer</p>
       </section>
-      <section id="How_It_Works">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/y8Yv4pnO7qc"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          id="video"
-        ></iframe>
+
+      <section id="projects">
+        <h2 class="project-tile">These are some of my projects</h2>
+        <div class="work">
+          <article>
+            <a
+              href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+                alt="tribute page"
+              />
+              <div class="name">
+                <span>&lt;</span>
+                <p>Tribute Page</p>
+                <span>/&gt;</span>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a
+              href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
+              target="_blank"
+            >
+              <img
+                src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png
+"
+                alt="random quotes"
+              />
+              <div class="name">
+                <span>&lt;</span>
+                <p>Random Quote Machine</p>
+                <span>/&gt;</span>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a
+              href="https://codepen.io/freeCodeCamp/full/wgGVVX"
+              target="_blank"
+            >
+              <img
+                src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+                alt="Calculator"
+              />
+              <div class="name">
+                <span>&lt;</span>
+                <p>Javascript Calculator</p>
+                <span>/&gt;</span>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a
+              href="https://codepen.io/freeCodeCamp/full/mVEJag"
+              target="_blank"
+            >
+              <img
+                src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+                alt="Map"
+              />
+              <div class="name">
+                <span>&lt;</span>
+                <p>Map Data Across the Globe</p>
+                <span>/&gt;</span>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a
+              href="https://codepen.io/freeCodeCamp/full/wGqEga"
+              target="_blank"
+            >
+              <img
+                src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
+                alt="Wikipeddia Viewer"
+              />
+              <div class="name">
+                <span>&lt;</span>
+                <p>Wikipeddia Viewer</p>
+                <span>/&gt;</span>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a
+              href="https://codepen.io/freeCodeCamp/full/KzXQgy"
+              target="_blank"
+            >
+              <img
+                src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
+                alt="Tic Tac Toe Game"
+              />
+              <div class="name">
+                <span>&lt;</span>
+                <p>Tic Tac Toi Game</p>
+                <span>/&gt;</span>
+              </div>
+            </a>
+          </article>
+          <div class="button">
+            <a href="https://codepen.io/FreeCodeCamp/" target="_blank">
+              <button>Show all &gt;</button>
+            </a>
+          </div>
+        </div>
       </section>
-      <section id="Pricing">
-        <article>
-          <h4>TENOR TROMBONE</h4>
-          <strong>$600</strong>
-          <p>Lorem ipsum</p>
-          <p>Lorem ipsum</p>
-          <p>Lorem ipsum dollar</p>
-          <p>Lorem ipsum</p>
-          <button class="select">Select</button>
-        </article>
-        <article>
-          <h4>BASS TROMBONE</h4>
-          <strong>$900</strong>
-          <p>Lorem ipsum</p>
-          <p>Lorem ipsum</p>
-          <p>Lorem ipsum dollar</p>
-          <p>Lorem ipsum</p>
-          <button class="select">Select</button>
-        </article>
-        <article>
-          <h4>VALVE TROMBONE</h4>
-          <strong>$1200</strong>
-          <p>Lorem ipsum</p>
-          <p>Lorem ipsum</p>
-          <p>Lorem ipsum dollar</p>
-          <p>Lorem ipsum</p>
-          <button class="select">Select</button>
-        </article>
+
+      <section id="contact">
+        <h3>Let's work together...</h3>
+        <p>How do you take your coffee?</p>
+        <div id="social">
+          <a
+            href="https://www.linkedin.com/in/anwaar-salam-61a3821b0/"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-square"></i>
+            Facebook
+          </a>
+          <a
+            href="https://github.com/Anwaar12"
+            target="_blank"
+            id="profile-link"
+          >
+            <i class="fab fa-github"></i>
+            Github
+          </a>
+          <a href="https://twitter.com/Anwaar154" target="_blank">
+            <i class="fab fa-twitter"></i>
+            Twitter
+          </a>
+          <a href="mailto:anwaarsalam12@gmail.com" target="_blank">
+            <i class="fas fa-at"></i>
+            Send a mail
+          </a>
+          <a href="tel:+92 3169085544" target="_blank">
+            <i class="fas fa-mobile-alt"></i>
+            Call Me
+          </a>
+        </div>
       </section>
     </main>
+
     <footer>
-      <a href="#Features">Privacy</a>
-      <a href="#Features">Terms</a>
-      <a href="#Features">Contact</a>
-      <p>Copyright 2016, Original Trombones</p>
+      <p>
+        **This is just a fake portfolio. All the projects and contact details
+        given are not real.
+      </p>
+      <p>
+        © Created for
+        <a href="https://www.freecodecamp.com/">freeCodeCamp</a>
+        <i class="fab fa-free-code-camp"></i>
+      </p>
     </footer>
   </body>
 </html>
