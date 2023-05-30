@@ -2,193 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
+    <title>Guess My Number!</title>
   </head>
   <body>
     <header>
-      <nav id="navbar">
-        <a href="#welcome-section">About</a>
-        <a href="#projects">Work</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again">Again!</button>
+      <div class="number">?</div>
     </header>
-
     <main>
-      <section id="welcome-section">
-        <h1>Hey I am Anwaar</h1>
-        <p>a web developer</p>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
       </section>
-
-      <section id="projects">
-        <h2 class="project-tile">These are some of my projects</h2>
-        <div class="work">
-          <article>
-            <a
-              href="https://codepen.io/freeCodeCamp/full/zNqgVx"
-              target="_blank"
-            >
-              <img
-                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
-                alt="tribute page"
-              />
-              <div class="name">
-                <span>&lt;</span>
-                <p>Tribute Page</p>
-                <span>/&gt;</span>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a
-              href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
-              target="_blank"
-            >
-              <img
-                src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png
-"
-                alt="random quotes"
-              />
-              <div class="name">
-                <span>&lt;</span>
-                <p>Random Quote Machine</p>
-                <span>/&gt;</span>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a
-              href="https://codepen.io/freeCodeCamp/full/wgGVVX"
-              target="_blank"
-            >
-              <img
-                src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-                alt="Calculator"
-              />
-              <div class="name">
-                <span>&lt;</span>
-                <p>Javascript Calculator</p>
-                <span>/&gt;</span>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a
-              href="https://codepen.io/freeCodeCamp/full/mVEJag"
-              target="_blank"
-            >
-              <img
-                src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
-                alt="Map"
-              />
-              <div class="name">
-                <span>&lt;</span>
-                <p>Map Data Across the Globe</p>
-                <span>/&gt;</span>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a
-              href="https://codepen.io/freeCodeCamp/full/wGqEga"
-              target="_blank"
-            >
-              <img
-                src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
-                alt="Wikipeddia Viewer"
-              />
-              <div class="name">
-                <span>&lt;</span>
-                <p>Wikipeddia Viewer</p>
-                <span>/&gt;</span>
-              </div>
-            </a>
-          </article>
-          <article>
-            <a
-              href="https://codepen.io/freeCodeCamp/full/KzXQgy"
-              target="_blank"
-            >
-              <img
-                src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
-                alt="Tic Tac Toe Game"
-              />
-              <div class="name">
-                <span>&lt;</span>
-                <p>Tic Tac Toi Game</p>
-                <span>/&gt;</span>
-              </div>
-            </a>
-          </article>
-          <div class="button">
-            <a href="https://codepen.io/FreeCodeCamp/" target="_blank">
-              <button>Show all &gt;</button>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h3>Let's work together...</h3>
-        <p>How do you take your coffee?</p>
-        <div id="social">
-          <a
-            href="https://www.linkedin.com/in/anwaar-salam-61a3821b0/"
-            target="_blank"
-            class="social-link"
-          >
-            <i class="fab fa-facebook-square"></i>
-            Facebook
-          </a>
-          <a
-            href="https://github.com/Anwaar12"
-            target="_blank"
-            id="profile-link"
-            class="social-link"
-          >
-            <i class="fab fa-github"></i>
-            Github
-          </a>
-          <a
-            href="https://twitter.com/Anwaar154"
-            target="_blank"
-            class="social-link"
-          >
-            <i class="fab fa-twitter"></i>
-            Twitter
-          </a>
-          <a
-            href="mailto:anwaarsalam12@gmail.com"
-            target="_blank"
-            class="social-link"
-          >
-            <i class="fas fa-at"></i>
-            Send a mail
-          </a>
-          <a href="tel:+92 3169085544" target="_blank" class="social-link">
-            <i class="fas fa-mobile-alt"></i>
-            Call Me
-          </a>
-        </div>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
       </section>
     </main>
-
-    <footer>
-      <p>
-        **This is just a fake portfolio. All the projects and contact details
-        given are not real.
-      </p>
-      <p>
-        © Created for
-        <a href="https://www.freecodecamp.com/">freeCodeCamp</a>
-        <i class="fab fa-free-code-camp"></i>
-      </p>
-    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
