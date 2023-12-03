@@ -1,0 +1,33 @@
+body{
+    border: 5px solid black;
+    font-family: sans-serif;
+}
+h2{
+    text-align: center;
+    background-color: rgba(68, 68, 68, 0.212);
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.price{
+    color: #777;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+article a:link{
+color: black;
+}
+
+article ul{
+    list-style: square;
+}
+button a{
+    color: blanchedalmond;
+}
+ button{
+    font-size: 32px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
